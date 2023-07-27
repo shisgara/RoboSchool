@@ -379,6 +379,7 @@ a {
 }
 
 .burger-close {
+  display: none;
   position: absolute;
   right: var(--container-offset);
   top: 30px;
@@ -391,6 +392,11 @@ a {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 14px 14px;
+}
+@media (max-width: 992px) {
+  .burger-close {
+    display: block;
+  }
 }
 
 .header {
